@@ -25,7 +25,7 @@ public class DoacaoSangue {
 		if (idadeDoador < 18 || idadeDoador > 69 || ((idadeDoador >= 60 && idadeDoador <= 69) && primDoaçao == true))
 			System.out.println(nomeDoador + " não está apto(a/e) para doar sangue!");
 		else
-			System.out.println(nomeDoador + " está apto(a/e) para doar sangue!");
+			System.out.println(nomeDoador + " está apto(a/e)	 para doar sangue!");
 
 		leia.close();
 
