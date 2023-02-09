@@ -29,7 +29,7 @@ public class DoacaoSangue {
 			verificaçao = false;
 		else {
 			System.out.println("\nCaractere Inválido!");
-			System.exit(0);
+			System.exit(0); //Interrompe o programa no caso de inserido um caractere invalido
 		}
 		
 		if (idadeDoador < 18 || idadeDoador > 69 || ((idadeDoador >= 60 && idadeDoador <= 69) && verificaçao == true))
