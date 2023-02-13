@@ -8,7 +8,7 @@ public class ExercVetores2 {
 	public static void main(String[] args) {
 		
 		Scanner leia = new Scanner(System.in);
-		DecimalFormat df = new DecimalFormat("###,##");
+		DecimalFormat df = new DecimalFormat("###.##");
 		
 		int[] vetor = new int [10];
 		int soma = 0;
@@ -41,7 +41,7 @@ public class ExercVetores2 {
 		}
 		
 		System.out.println("\nSoma: " + soma);
-		System.out.printf("Média: " + df.format((float) (soma/vetor.length)));
+		System.out.println("Média: " + df.format((float) soma/vetor.length));
 		
 		leia.close();
 	}
