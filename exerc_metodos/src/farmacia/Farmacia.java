@@ -5,15 +5,15 @@ public class Farmacia {
 	private long id;
 	private String nome;
 	private String fabricante;
-	private int tipo;
+	private int categoria;
 	private float valor;
 	
-	public Farmacia(long id, String nome, String fabricante, int tipo, float valor) {
+	public Farmacia(long id, String nome, String fabricante, int categoria, float valor) {
 		super();
 		this.id = id;
 		this.nome = nome;
 		this.fabricante = fabricante;
-		this.tipo = tipo;
+		this.categoria = categoria;
 		this.valor = valor;
 	}
 
@@ -41,12 +41,12 @@ public class Farmacia {
 		this.fabricante = fabricante;
 	}
 
-	public int getTipo() {
-		return tipo;
+	public int getcategoria() {
+		return categoria;
 	}
 
-	public void setTipo(int tipo) {
-		this.tipo = tipo;
+	public void setcategoria(int categoria) {
+		this.categoria = categoria;
 	}
 
 	public float getValor() {
@@ -59,24 +59,23 @@ public class Farmacia {
 	
 	public void visualizar() {
 		
-		String tipo = "";
+		String categoria = "";
 		
-		switch(this.tipo) {
-			case 1 -> tipo = "Referência";
-			case 2 -> tipo = "Similar";
-			case 3 -> tipo = "Genérico";
+		switch(this.categoria) {
+			case 1 -> categoria = "Medicamento";
+			case 2 -> categoria = "Perfumaria";
 		}
 		
 		System.out.println("||--------------------------------------------------||");
 		System.out.println("||                                                  ||");
-		System.out.println("||               DADOS DO MEDICAMENTO               ||");
+		System.out.println("||                 DADOS DO PRODUTO                 ||");
 		System.out.println("||                                                  ||");
 		System.out.println("||--------------------------------------------------||");
 		System.out.println("                                                      ");
 		System.out.println("Id do Medicamento: " + this.id);
 		System.out.println("Nome do Medicamento: " + this.nome);
 		System.out.println("Nome do fabricante: " + this.fabricante);
-		System.out.println("Tipo do Medicamento: " + tipo);
+		System.out.println("categoria do Medicamento: " + categoria);
 		System.out.println("Valor do Medicamento: " + this.valor);
 	}
 
